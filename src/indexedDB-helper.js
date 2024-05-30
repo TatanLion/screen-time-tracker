@@ -47,3 +47,13 @@ export function getAllScreenTimes() {
     store.getAll()
   );
 }
+
+export function deleteDatabase() {
+  const request = indexedDB.deleteDatabase("ScreenTimeDB");
+  request.onsuccess = function(event) {
+    console.log("Database deleted successfully");
+  }
+  request.onerror = function(event) {
+    console.error("Error trying delete database", event.target.error);
+  };
+}

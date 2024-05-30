@@ -1,4 +1,4 @@
-import { addOrUpdateScreenTime, getScreenTime, getAllScreenTimes } from './indexedDB-helper.js';
+import { addOrUpdateScreenTime, getScreenTime, getAllScreenTimes,deleteDatabase } from './indexedDB-helper.js';
 
 export class ScreenTimeTracker {
   constructor() {
@@ -69,5 +69,9 @@ export class ScreenTimeTracker {
       });
       return totalTimes;
     });
+  }
+
+  deleteIndexDB(){
+    deleteDatabase()
   }
 }
