@@ -1,0 +1,17 @@
+{
+  "name": "npm_screen_time",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "time",
+    "screen",
+    "user",
+    "measure"
+  ],
+  "author": "TatanLion",
+  "license": "MIT",
+  "description": "Library to measure the screen time of a user"
+}
